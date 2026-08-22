@@ -10,4 +10,7 @@ router.get("/:dbname/getpunches/:date", punchController.getPunches);
 // Date Range
 router.get("/:dbname/getpunches/:fromDate/:toDate", punchController.getPunchesByDateRange);
 
+// Get company punches - incremental
+router.get("/:dbname/getcompanypunches/:company",punchController.getCompanyPunches);
+
 module.exports = router;
